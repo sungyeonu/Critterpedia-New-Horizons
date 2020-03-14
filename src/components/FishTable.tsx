@@ -15,19 +15,33 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name: string, image: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
-  return { name, image, price, location, shadowSize, time, seasons };
+interface Fish {
+  name: string;
+  imageLink: string;
+  price: string;
+  location: string;
+  shadowSize: string;
+  time: string;
+  seasons: string;
 }
 
-// fishJSON.forEach(obj => {
-  
-// });
+function createData(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
+  let item: Fish = { 
+    name: name, 
+    imageLink: imageLink, 
+    price: price, 
+    location: location, 
+    shadowSize: shadowSize, 
+    time: time, 
+    seasons: seasons, 
+   };
+  return item;
+}
 
-const rows = [
-  createData("Crawfish", "https://vignette.wikia.nocookie.net/animalcrossing/images/e/e2/Crawfish_HHD_Icon.png/revision/latest?cb=20161105194621", "200", "Pond", "2", "All day", "---vvvvvv---"),
-
-
-];
+let rows: Fish[] = [];
+fishJSON.forEach(obj => {
+  rows.push(createData(obj.name, obj.imageLink, obj.price, obj.location, obj.shadowSize, obj.time, obj.jan + obj.feb + obj.mar + obj.apr + obj.may + obj.jun + obj.jul + obj.aug + obj.sep + obj.oct + obj.nov + obj.dec))
+});
 
 export default function SimpleTable() {
   const classes = useStyles();
@@ -37,29 +51,27 @@ export default function SimpleTable() {
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="left">Image</TableCell>
+            <TableCell>Image</TableCell>
             <TableCell>Name</TableCell>
-            <TableCell align="right">Price</TableCell>
-            <TableCell align="right">Location</TableCell>
-            <TableCell align="right">Shadow Size</TableCell>
-            <TableCell align="right">Time</TableCell>
-            <TableCell align="right">Seasons</TableCell>
+            <TableCell>Price</TableCell>
+            <TableCell>Location</TableCell>
+            <TableCell>Shadow Size</TableCell>
+            <TableCell>Time</TableCell>
+            <TableCell>Seasons</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map(row => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                
-                <img src={row.image} alt="Italian Trulli"/>
-
+                <img src={row.imageLink} alt={row.name}/>
               </TableCell>
-              <TableCell align="left">{row.name}</TableCell>
-              <TableCell align="right">{row.price}</TableCell>
-              <TableCell align="left">{row.location}</TableCell>
-              <TableCell align="right">{row.shadowSize}</TableCell>
-              <TableCell align="left">{row.time}</TableCell>
-              <TableCell align="left">{row.seasons}</TableCell>
+              <TableCell>{row.name}</TableCell>
+              <TableCell>{row.price}</TableCell>
+              <TableCell>{row.location}</TableCell>
+              <TableCell>{row.shadowSize}</TableCell>
+              <TableCell>{row.time}</TableCell>
+              <TableCell>{row.seasons}</TableCell>
             </TableRow>
           ))}
         </TableBody>
