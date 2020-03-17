@@ -24,7 +24,6 @@ function App({setCategory}: any) {
         <h3>Toggle me</h3>
       </button>
       <IconsContainer 
-        // key = {isToggled}
         // {...IconsContainerProps}
         setCategory={setCategory}
       />
