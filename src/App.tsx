@@ -6,10 +6,11 @@ import BugsTable from './components/BugsTable'
 // interface IconsContainerProps {
 //   category: string,
 // }
-const [category, setCategory] = useState("fish");
 
 function App() {
   const [isToggled, setToggled] = useState(true);
+  const [category, setCategory] = useState("fish");
+
   const toggleTrueFalse = () => setToggled(!isToggled);
 
   const IconsContainerProps = {
@@ -21,9 +22,8 @@ function App() {
       <button onClick={toggleTrueFalse}>
         <h3>Toggle me</h3>
       </button>
-      <IconsContainer 
-        // {...IconsContainerProps}
-        // setCategory={setCategory}
+      <IconsContainer
+        setCategory={setCategory}
       />
       {
         isToggled

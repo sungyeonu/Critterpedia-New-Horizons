@@ -4,6 +4,10 @@ import Avatar from '@material-ui/core/Avatar';
 import bugIcon from '../../src/icons/bug.png'
 import fishIcon from '../../src/icons/fish.png'
 
+interface IconsContainerProps {
+  setCategory: (c: string) => void;
+}
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -23,13 +27,13 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function IconAvatars() {
+export default function IconAvatars({setCategory}: IconsContainerProps) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Avatar className={classes.blue}>
-        <img src={fishIcon} width="32px" height="32px" alt="fish" />
+        <img src={fishIcon} width="32px" height="32px" alt="fish" onClick={setCategory("fish")} />
       </Avatar>
       <Avatar className={classes.red}>
         <img src={bugIcon} width="32px" height="32px" alt="bugs" />
