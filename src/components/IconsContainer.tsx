@@ -5,7 +5,7 @@ import bugIcon from '../../src/icons/bug.png'
 import fishIcon from '../../src/icons/fish.png'
 
 interface IconsContainerProps {
-  setCategory: (c: string) => void;
+  setCategory: (category: string) => void;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -32,11 +32,11 @@ export default function IconAvatars({setCategory}: IconsContainerProps) {
 
   return (
     <div className={classes.root}>
-      <Avatar className={classes.blue}>
-        <img src={fishIcon} width="32px" height="32px" alt="fish" onClick={setCategory("fish")} />
+      <Avatar className={classes.blue} onClick={() => setCategory("fish")} >
+        <img src={fishIcon} width="32px" height="32px" alt="fish"/>
       </Avatar>
-      <Avatar className={classes.red}>
-        <img src={bugIcon} width="32px" height="32px" alt="bugs" />
+      <Avatar className={classes.red} onClick={() => setCategory("bugs")}>
+        <img src={bugIcon} width="32px" height="32px" alt="bugs"/>
       </Avatar>
     </div>
   );
