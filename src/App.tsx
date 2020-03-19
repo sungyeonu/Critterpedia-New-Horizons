@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import IconsContainer from './components/IconsContainer'
 import FishTable from './components/FishTable'
 import BugsTable from './components/BugsTable'
+import Seasons from './components/Seasons';
 
 function App() {
   const [category, setCategory] = useState("fish");
@@ -9,7 +10,6 @@ function App() {
     backgroundColor: "azure",
   };
   
-
   let table;
   if (category === "fish") {
     table = <FishTable />;
@@ -23,6 +23,7 @@ function App() {
       <IconsContainer
         setCategory={setCategory}
       />
+      <Seasons/>
       {table}
     </div>
   );

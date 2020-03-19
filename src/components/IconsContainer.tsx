@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import bugIcon from '../../src/icons/bug.png'
-import fishIcon from '../../src/icons/fish.png'
+import bugIcon from '../../src/images/bug.png'
+import fishIcon from '../../src/images/fish.png'
 
 interface IconsContainerProps {
   setCategory: (category: string) => void;
