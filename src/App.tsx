@@ -5,6 +5,11 @@ import BugsTable from './components/BugsTable'
 
 function App() {
   const [category, setCategory] = useState("fish");
+  const mystyle = {
+    backgroundColor: "azure",
+  };
+  
+
   let table;
   if (category === "fish") {
     table = <FishTable />;
@@ -14,7 +19,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={mystyle}>
       <IconsContainer
         setCategory={setCategory}
       />
