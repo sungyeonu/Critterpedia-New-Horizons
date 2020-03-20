@@ -7,7 +7,7 @@ import Seasons from './components/Seasons';
 function App() {
   const [category, setCategory] = useState("fish");
   const mystyle = {
-    backgroundColor: "azure",
+    // backgroundColor: "azure",
   };
   
   let table;

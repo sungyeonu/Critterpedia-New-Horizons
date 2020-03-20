@@ -1,22 +1,19 @@
 import React from 'react';
+
+interface CircleProps {
+  borderColor: string,
+  fillColor: string
+}
 const circleStyle = {
-  padding: 10,
-  margin: 20,
-  display: "inline-block",
-  borderRadius: "50%",
-  width: 100,
-  height: 100,
 }
 
 
-export default function Circles() {
+export default function Circle({ borderColor, fillColor }: CircleProps) {
+
   return (
-    <div style={circleStyle}>
-      <svg height="10" width="10">
-        <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1" fill="red" />
-      </svg>
-      <svg height="10" width="10">
-        <circle cx="5" cy="5" r="4" stroke="black" stroke-width="1" fill="red" />
+    <div>
+      <svg height="12" width="12">
+        <circle style={circleStyle} cx={5} cy={5} r={4} stroke={borderColor} stroke-width="1" fill={fillColor} />
       </svg>
     </div>
   )

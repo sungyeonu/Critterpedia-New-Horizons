@@ -7,8 +7,8 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Seasons from './Seasons';
 import fishJSON from '../data/fish.json';
+import Circle from './Circle';
 
 const useStyles = makeStyles({
   table: {
@@ -24,6 +24,10 @@ interface Fish {
   shadowSize: string;
   time: string;
   seasons: string;
+}
+
+interface Test {
+  s: div;
 }
 
 function createData(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {

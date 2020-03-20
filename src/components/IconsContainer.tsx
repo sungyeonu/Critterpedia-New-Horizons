@@ -5,7 +5,7 @@ import bugIcon from '../../src/images/bug.png'
 import fishIcon from '../../src/images/fish.png'
 
 interface IconsContainerProps {
-  setCategory: (category: string) => void;
+  setCategory: (c: string) => void;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
