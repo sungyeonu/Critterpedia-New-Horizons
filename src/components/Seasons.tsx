@@ -1,9 +1,25 @@
 import React from 'react';
 import Circle from './Circle';
 
+interface SeasonsProps {
+  jan: string, 
+  feb: string, 
+  mar: string, 
+  apr: string, 
+  may: string, 
+  jun: string, 
+  jul: string, 
+  aug: string, 
+  sep: string, 
+  oct: string, 
+  nov: string, 
+  dec: string
+}
+
 const seasonsStyle = {
   display: 'flex',
 };
+
 const colorCodes = {
   winter: "#01BFFF",
   spring: "#A7FC01",
@@ -16,6 +32,7 @@ const sp = colorCodes.spring;
 const su = colorCodes.summer;
 const fa = colorCodes.fall;
 const w = "#ffffff";
+
 
 export default function Seasons() {
   return (

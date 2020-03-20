@@ -8,7 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import fishJSON from '../data/fish.json';
-import Circle from './Circle';
+import Seasons from './Seasons';
 
 const useStyles = makeStyles({
   table: {
@@ -26,20 +26,16 @@ interface Fish {
   seasons: string;
 }
 
-interface Test {
-  s: div;
-}
-
 function createData(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
-  let item: Fish = { 
-    name: name, 
-    imageLink: imageLink, 
-    price: price, 
-    location: location, 
-    shadowSize: shadowSize, 
-    time: time, 
-    seasons: seasons, 
-   };
+  let item: Fish = {
+    name: name,
+    imageLink: imageLink,
+    price: price,
+    location: location,
+    shadowSize: shadowSize,
+    time: time,
+    seasons: seasons,
+  };
   return item;
 }
 
@@ -69,7 +65,7 @@ export default function SimpleTable() {
           {rows.map(row => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                <img src={row.imageLink} alt={row.name}/>
+                <img src={row.imageLink} alt={row.name} />
               </TableCell>
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.price}</TableCell>
