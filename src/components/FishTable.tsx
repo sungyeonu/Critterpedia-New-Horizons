@@ -26,6 +26,7 @@ interface Fish {
   seasons: string;
 }
 
+console.log(typeof(Seasons));
 function createData(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
   let item: Fish = {
     name: name,
