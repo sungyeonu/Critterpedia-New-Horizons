@@ -1,14 +1,10 @@
 import React, { useState } from 'react';
-import IconsContainer from './components/IconsContainer'
-import FishTable from './components/FishTable'
-import BugsTable from './components/BugsTable'
-import Seasons from './components/Seasons';
+import IconsContainer from './containers/IconsContainer';
+import FishTable from './components/FishTable';
+import BugsTable from './components/BugsTable';
 
-function App() {
+export default function App() {
   const [category, setCategory] = useState("fish");
-  const mystyle = {
-    // backgroundColor: "azure",
-  };
   
   let table;
   if (category === "fish") {
@@ -19,14 +15,11 @@ function App() {
   }
 
   return (
-    <div className="App" style={mystyle}>
+    <div className="App">
       <IconsContainer
         setCategory={setCategory}
       />
-      <Seasons/>
       {table}
     </div>
   );
 }
-
-export default App;

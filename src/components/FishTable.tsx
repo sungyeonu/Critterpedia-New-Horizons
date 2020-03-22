@@ -8,7 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import fishJSON from '../data/fish.json';
-import Seasons from './Seasons';
+import SeasonsContainer from '../containers/SeasonsContainer';
 
 const useStyles = makeStyles({
   table: {
@@ -17,16 +17,15 @@ const useStyles = makeStyles({
 });
 
 interface Fish {
-  name: string;
-  imageLink: string;
-  price: string;
-  location: string;
-  shadowSize: string;
-  time: string;
-  seasons: string;
+  name: string,
+  imageLink: string,
+  price: string,
+  location: string,
+  shadowSize: string,
+  time: string,
+  seasonsContainer: JSX.Element;
 }
 
-console.log(typeof(Seasons));
 function createData(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
   let item: Fish = {
     name: name,
@@ -35,7 +34,7 @@ function createData(name: string, imageLink: string, price: string, location: st
     location: location,
     shadowSize: shadowSize,
     time: time,
-    seasons: seasons,
+    seasonsContainer: <SeasonsContainer seasons={seasons}/>,
   };
   return item;
 }
@@ -73,7 +72,7 @@ export default function SimpleTable() {
               <TableCell>{row.location}</TableCell>
               <TableCell>{row.shadowSize}</TableCell>
               <TableCell>{row.time}</TableCell>
-              <TableCell>{row.seasons}</TableCell>
+              <TableCell>{row.seasonsContainer}</TableCell>
             </TableRow>
           ))}
         </TableBody>
