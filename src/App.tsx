@@ -22,12 +22,15 @@ export default function App() {
         This table can still be used in the Southern Hemisphere, add 6 to the months eg. March + 6 = September
       </Typography>
       <Typography variant="body2" gutterBottom>
-        Missing information is not Sungyeon's fault. Admins of animalcrossing.fandom.com have not uploaded data on time :/
+        Missing/Broken information is not Sungyeon's fault. Admins of animalcrossing.fandom.com have not uploaded data on time &#128544;
       </Typography>
       <IconsContainer
         setCategory={setCategory}
       />
       {table}
+      <Typography variant="body2" gutterBottom>
+        v1.0 Data credits: animalcrossing.fandom.com/wiki/
+      </Typography>
     </div>
   );
 }
