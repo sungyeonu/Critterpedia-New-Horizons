@@ -29,7 +29,8 @@ export default function App() {
       />
       {table}
       <Typography variant="body2" gutterBottom>
-        v1.0 Data credits: animalcrossing.fandom.com/wiki/
+        {/* v1.0 Data credits: animalcrossing.fandom.com/wiki/ */}
+        {/* v1.1 Data credits: animalcrossing.fandom.com/wiki/ */}
       </Typography>
     </div>
   );
