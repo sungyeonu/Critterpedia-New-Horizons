@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/animal-crossing-db/static/js/main.c95eb71f.chunk.js",
-    "main.js.map": "/animal-crossing-db/static/js/main.c95eb71f.chunk.js.map",
+    "main.js": "/animal-crossing-db/static/js/main.e0836089.chunk.js",
+    "main.js.map": "/animal-crossing-db/static/js/main.e0836089.chunk.js.map",
     "runtime-main.js": "/animal-crossing-db/static/js/runtime-main.129f975b.js",
     "runtime-main.js.map": "/animal-crossing-db/static/js/runtime-main.129f975b.js.map",
     "static/js/2.78764fb3.chunk.js": "/animal-crossing-db/static/js/2.78764fb3.chunk.js",
     "static/js/2.78764fb3.chunk.js.map": "/animal-crossing-db/static/js/2.78764fb3.chunk.js.map",
     "index.html": "/animal-crossing-db/index.html",
-    "precache-manifest.7cb4ea84245309ae8e5ac27bf521ac68.js": "/animal-crossing-db/precache-manifest.7cb4ea84245309ae8e5ac27bf521ac68.js",
+    "precache-manifest.cf0f2e1e51bcef9671592ad88ca85641.js": "/animal-crossing-db/precache-manifest.cf0f2e1e51bcef9671592ad88ca85641.js",
     "service-worker.js": "/animal-crossing-db/service-worker.js",
     "static/js/2.78764fb3.chunk.js.LICENSE.txt": "/animal-crossing-db/static/js/2.78764fb3.chunk.js.LICENSE.txt",
     "static/media/bug.png": "/animal-crossing-db/static/media/bug.806efd53.png",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.129f975b.js",
     "static/js/2.78764fb3.chunk.js",
-    "static/js/main.c95eb71f.chunk.js"
+    "static/js/main.e0836089.chunk.js"
   ]
 }
