@@ -65,7 +65,7 @@ export default function SimpleTable() {
           {rows.map(row => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                <img src={row.imageLink} alt={row.name} />
+                <img src={row.imageLink} alt={row.name} width="64" height="64"/>
               </TableCell>
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.price}</TableCell>
