@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "323245f70da2bdc149321a1da2becabf",
+    "revision": "999e067cc5bc5647d7abf41362553a37",
     "url": "/animal-crossing-db/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/animal-crossing-db/static/js/2.78764fb3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "46bc558be2bc3c6fa0b3",
-    "url": "/animal-crossing-db/static/js/main.a4b663d3.chunk.js"
+    "revision": "c2d81216b6ec3384ba18",
+    "url": "/animal-crossing-db/static/js/main.f23601d5.chunk.js"
   },
   {
     "revision": "2038918130cf9d8f5e7f",
