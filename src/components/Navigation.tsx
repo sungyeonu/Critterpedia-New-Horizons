@@ -5,22 +5,21 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
+import bugIcon from '../images/bug.png'
+import Avatar from '@material-ui/core/Avatar';
+
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
+    red: {
+      backgroundColor: '#FF7C7C',
     },
   }),
 );
 
 export default function Navigation() {
+  const classes = useStyles();
+
   return (
     <div>
       <AppBar color="default">
@@ -35,8 +34,12 @@ export default function Navigation() {
               </Typography>
             </Button>
           </Box>
-
-          <Button color="inherit">Bugs</Button>
+          <Box display="flex">
+            <Avatar className={classes.red}>
+              <img src={bugIcon} width="32px" height="32px" alt="bugs" />
+            </Avatar>            
+            <Button color="inherit">Bugs</Button>
+          </Box>
           <Button color="inherit">Fish</Button>
 
           <Button color="inherit">Login</Button>

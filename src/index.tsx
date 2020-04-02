@@ -9,6 +9,8 @@ const routing = (
   <BrowserRouter>
     <div>
       <Route exact path="/" component={App}></Route>
+      {/* <Route path="/home" component={App}></Route> */}
+      {/* <Route path="/login" component={App}></Route> */}
       <Route path="/bugs" component={BugsTable}></Route>
       <Route path="/fish" component={FishTable}></Route>
     </div>
