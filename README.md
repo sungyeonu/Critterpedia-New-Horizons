@@ -1,4 +1,4 @@
-Live project deployed at: https://sungyeonu.github.io/Critterpedia-New-Leaf/
+Live project deployed at: https://sungyeonu.github.io/Critterpedia-New-Horizons/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
