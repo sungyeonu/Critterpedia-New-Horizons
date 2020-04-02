@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/animal-crossing-db/static/js/main.f23601d5.chunk.js",
-    "main.js.map": "/animal-crossing-db/static/js/main.f23601d5.chunk.js.map",
-    "runtime-main.js": "/animal-crossing-db/static/js/runtime-main.129f975b.js",
-    "runtime-main.js.map": "/animal-crossing-db/static/js/runtime-main.129f975b.js.map",
-    "static/js/2.78764fb3.chunk.js": "/animal-crossing-db/static/js/2.78764fb3.chunk.js",
-    "static/js/2.78764fb3.chunk.js.map": "/animal-crossing-db/static/js/2.78764fb3.chunk.js.map",
-    "index.html": "/animal-crossing-db/index.html",
-    "precache-manifest.36d41691694a5bfb8d7e41524e3e10a1.js": "/animal-crossing-db/precache-manifest.36d41691694a5bfb8d7e41524e3e10a1.js",
-    "service-worker.js": "/animal-crossing-db/service-worker.js",
-    "static/js/2.78764fb3.chunk.js.LICENSE.txt": "/animal-crossing-db/static/js/2.78764fb3.chunk.js.LICENSE.txt",
-    "static/media/bug.png": "/animal-crossing-db/static/media/bug.806efd53.png",
-    "static/media/fish.png": "/animal-crossing-db/static/media/fish.89bb41e2.png"
+    "main.js": "/Critterpedia-New-Leaf/static/js/main.f23601d5.chunk.js",
+    "main.js.map": "/Critterpedia-New-Leaf/static/js/main.f23601d5.chunk.js.map",
+    "runtime-main.js": "/Critterpedia-New-Leaf/static/js/runtime-main.9b1883e1.js",
+    "runtime-main.js.map": "/Critterpedia-New-Leaf/static/js/runtime-main.9b1883e1.js.map",
+    "static/js/2.78764fb3.chunk.js": "/Critterpedia-New-Leaf/static/js/2.78764fb3.chunk.js",
+    "static/js/2.78764fb3.chunk.js.map": "/Critterpedia-New-Leaf/static/js/2.78764fb3.chunk.js.map",
+    "index.html": "/Critterpedia-New-Leaf/index.html",
+    "precache-manifest.9da9cf68cdc211d8ffa3fb05664b574a.js": "/Critterpedia-New-Leaf/precache-manifest.9da9cf68cdc211d8ffa3fb05664b574a.js",
+    "service-worker.js": "/Critterpedia-New-Leaf/service-worker.js",
+    "static/js/2.78764fb3.chunk.js.LICENSE.txt": "/Critterpedia-New-Leaf/static/js/2.78764fb3.chunk.js.LICENSE.txt",
+    "static/media/bug.png": "/Critterpedia-New-Leaf/static/media/bug.806efd53.png",
+    "static/media/fish.png": "/Critterpedia-New-Leaf/static/media/fish.89bb41e2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.129f975b.js",
+    "static/js/runtime-main.9b1883e1.js",
     "static/js/2.78764fb3.chunk.js",
     "static/js/main.f23601d5.chunk.js"
   ]
