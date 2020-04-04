@@ -32,7 +32,8 @@ export default function App() {
         {/* v1.0 Data credits: animalcrossing.fandom.com/wiki/ */}
         {/* v1.1 Data credits: animalcrossing.fandom.com/wiki/ */}
         {/* v1.2 Data credits: animalcrossing.fandom.com/wiki/ */}
-        v1.3 Data credits: animalcrossing.fandom.com/wiki/
+        {/* v1.3 Data credits: animalcrossing.fandom.com/wiki/ */}
+        v1.4 
       </Typography>
     </div>
   );
