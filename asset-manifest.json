@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.js": "/Critterpedia-New-Horizons/static/js/main.ef0a1804.chunk.js",
-    "main.js.map": "/Critterpedia-New-Horizons/static/js/main.ef0a1804.chunk.js.map",
-    "runtime-main.js": "/Critterpedia-New-Horizons/static/js/runtime-main.dcac32da.js",
-    "runtime-main.js.map": "/Critterpedia-New-Horizons/static/js/runtime-main.dcac32da.js.map",
-    "static/js/2.78764fb3.chunk.js": "/Critterpedia-New-Horizons/static/js/2.78764fb3.chunk.js",
-    "static/js/2.78764fb3.chunk.js.map": "/Critterpedia-New-Horizons/static/js/2.78764fb3.chunk.js.map",
+    "main.js": "/Critterpedia-New-Horizons/static/js/main.7a4311eb.chunk.js",
+    "main.js.map": "/Critterpedia-New-Horizons/static/js/main.7a4311eb.chunk.js.map",
+    "runtime-main.js": "/Critterpedia-New-Horizons/static/js/runtime-main.4f121e4b.js",
+    "runtime-main.js.map": "/Critterpedia-New-Horizons/static/js/runtime-main.4f121e4b.js.map",
+    "static/js/2.82453446.chunk.js": "/Critterpedia-New-Horizons/static/js/2.82453446.chunk.js",
+    "static/js/2.82453446.chunk.js.map": "/Critterpedia-New-Horizons/static/js/2.82453446.chunk.js.map",
     "index.html": "/Critterpedia-New-Horizons/index.html",
-    "precache-manifest.68e3a9c7ebe9175f8f5e6cfd051c08e9.js": "/Critterpedia-New-Horizons/precache-manifest.68e3a9c7ebe9175f8f5e6cfd051c08e9.js",
+    "precache-manifest.41c56bd9ff11d4a896c380a9bfe2d2e2.js": "/Critterpedia-New-Horizons/precache-manifest.41c56bd9ff11d4a896c380a9bfe2d2e2.js",
     "service-worker.js": "/Critterpedia-New-Horizons/service-worker.js",
-    "static/js/2.78764fb3.chunk.js.LICENSE.txt": "/Critterpedia-New-Horizons/static/js/2.78764fb3.chunk.js.LICENSE.txt",
-    "static/media/bug.png": "/Critterpedia-New-Horizons/static/media/bug.806efd53.png",
-    "static/media/fish.png": "/Critterpedia-New-Horizons/static/media/fish.89bb41e2.png"
+    "static/js/2.82453446.chunk.js.LICENSE.txt": "/Critterpedia-New-Horizons/static/js/2.82453446.chunk.js.LICENSE.txt",
+    "static/media/Isabelle.png": "/Critterpedia-New-Horizons/static/media/Isabelle.fe91b541.png",
+    "static/media/bugIcon.png": "/Critterpedia-New-Horizons/static/media/bugIcon.806efd53.png",
+    "static/media/fishIcon.png": "/Critterpedia-New-Horizons/static/media/fishIcon.89bb41e2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dcac32da.js",
-    "static/js/2.78764fb3.chunk.js",
-    "static/js/main.ef0a1804.chunk.js"
+    "static/js/runtime-main.4f121e4b.js",
+    "static/js/2.82453446.chunk.js",
+    "static/js/main.7a4311eb.chunk.js"
   ]
 }
