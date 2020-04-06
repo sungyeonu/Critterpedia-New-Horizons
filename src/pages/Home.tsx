@@ -23,6 +23,13 @@ export default function Home() {
       <Typography variant="body1">
         Thanks for using Critterpedia! I hope you find this site useful.
       </Typography>
+      <br />
+      <Typography variant="body1">
+        The tables are for Northern Hemisphere Time Sync/Zone.
+      </Typography>
+      <Typography variant="body1">
+        They can still be used in the Southern Hemisphere, add 6 to the months eg. March + 6 = September
+      </Typography>
       <Typography align="center">
         <img src={Isabelle} width="200" alt="Isabelle" />
       </Typography>
