@@ -1,40 +1,22 @@
 import React, { useState } from 'react';
-import IconsContainer from './containers/IconsContainer';
-import FishTable from './components/FishTable';
-import BugsTable from './components/BugsTable';
-import Typography from '@material-ui/core/Typography';
+import { Route, BrowserRouter } from 'react-router-dom'
+import Navigation from './components/Navigation'
+import Fish from './pages/Fish'
+import Bugs from './pages/Bugs'
+import Login from './pages/Login'
+import Home from './pages/Home'
 
 export default function App() {
-  const [category, setCategory] = useState("fish");
-
-  let table;
-  if (category === "fish") {
-    table = <FishTable />;
-  }
-  else if (category === "bugs") {
-    table = <BugsTable />;
-  }
-
+  const [token, setToken] = useState("")
   return (
-    <div className="App">
-      <Typography variant="body1" gutterBottom>
-        The below table is for Northern Hemisphere Time Sync/Zone. 
-        This table can still be used in the Southern Hemisphere, add 6 to the months eg. March + 6 = September
-      </Typography>
-      <Typography variant="body2" gutterBottom>
-        Missing/Broken information is not Sungyeon's fault. Admins of animalcrossing.fandom.com have not uploaded data on time &#128544;
-      </Typography>
-      <IconsContainer
-        setCategory={setCategory}
-      />
-      {table}
-      <Typography variant="body2" gutterBottom>
-        {/* v1.0 Data credits: animalcrossing.fandom.com/wiki/ */}
-        {/* v1.1 Data credits: animalcrossing.fandom.com/wiki/ */}
-        {/* v1.2 Data credits: animalcrossing.fandom.com/wiki/ */}
-        {/* v1.3 Data credits: animalcrossing.fandom.com/wiki/ */}
-        v1.4 
-      </Typography>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navigation/>
+          <Route exact path="/" component={ Home }></Route>
+          <Route path="/login" component={ Login }></Route>
+          <Route path="/bugs" component={ Bugs }></Route>
+          <Route path="/fish" component={ Fish }></Route>
+      </BrowserRouter>
+    </>
   );
 }

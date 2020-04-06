@@ -1,5 +1,5 @@
 import React from 'react';
-import Circle from '../components/Circle';
+import Circle from './Circle';
 
 interface SeasonsContainerProps {
   seasons: string;
@@ -54,15 +54,12 @@ export default function SeasonsContainer({ seasons }: SeasonsContainerProps) {
       {converter(seasons[0], 1)}
       {converter(seasons[1], 2)}
       {converter(seasons[2], 3)}
-
       {converter(seasons[3], 4)}
       {converter(seasons[4], 5)}
       {converter(seasons[5], 6)}
-
       {converter(seasons[6], 7)}
       {converter(seasons[7], 8)}
       {converter(seasons[8], 9)}
-
       {converter(seasons[9], 10)}
       {converter(seasons[10], 11)}
       {converter(seasons[11], 12)}

@@ -7,8 +7,8 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import bugsJson from '../data/bugs.json';
-import SeasonsContainer from '../containers/SeasonsContainer';
+import fishJSON from '../data/fish.json';
+import SeasonsContainer from '../components/season/SeasonsContainer';
 
 const useStyles = makeStyles({
   table: {
@@ -16,30 +16,32 @@ const useStyles = makeStyles({
   },
 });
 
-interface Bug {
+interface Fish {
   name: string,
   imageLink: string,
   price: string,
   location: string,
+  shadowSize: string,
   time: string,
   seasonsContainer: JSX.Element;
 }
 
-function createData(name: string, imageLink: string, price: string, location: string, time: string, seasons: string) {
-  let item: Bug = {
+function createFish(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
+  let item: Fish = {
     name: name,
     imageLink: imageLink,
     price: price,
     location: location,
+    shadowSize: shadowSize,
     time: time,
     seasonsContainer: <SeasonsContainer seasons={seasons}/>,
   };
   return item;
 }
-// change image to imageLinks
-let rows: Bug[] = [];
-bugsJson.forEach(obj => {
-  rows.push(createData(obj.name, obj.imageLink, obj.price, obj.location, obj.time, obj.jan + obj.feb + obj.mar + obj.apr + obj.may + obj.jun + obj.jul + obj.aug + obj.sep + obj.oct + obj.nov + obj.dec))
+
+let rows: Fish[] = [];
+fishJSON.forEach(obj => {
+  rows.push(createFish(obj.name, obj.imageLink, obj.price, obj.location, obj.shadowSize, obj.time, obj.jan + obj.feb + obj.mar + obj.apr + obj.may + obj.jun + obj.jul + obj.aug + obj.sep + obj.oct + obj.nov + obj.dec))
 });
 
 export default function SimpleTable() {
@@ -54,6 +56,7 @@ export default function SimpleTable() {
             <TableCell>Name</TableCell>
             <TableCell>Price</TableCell>
             <TableCell>Location</TableCell>
+            <TableCell>Shadow Size</TableCell>
             <TableCell>Time</TableCell>
             <TableCell>Seasons</TableCell>
           </TableRow>
@@ -67,6 +70,7 @@ export default function SimpleTable() {
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.price}</TableCell>
               <TableCell>{row.location}</TableCell>
+              <TableCell>{row.shadowSize}</TableCell>
               <TableCell>{row.time}</TableCell>
               <TableCell>{row.seasonsContainer}</TableCell>
             </TableRow>
