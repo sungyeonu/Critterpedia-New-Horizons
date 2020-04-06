@@ -12,64 +12,64 @@ import Avatar from '@material-ui/core/Avatar';
 import HomeIcon from '@material-ui/icons/Home';
 
 const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
+  createStyles({ 
     toolbar: theme.mixins.toolbar,
-    red: {
+    red: { 
       backgroundColor: "#FF7C7C",
     },
-    blue: {
+    blue: { 
       backgroundColor: "#88E1F2",
     },
-    text: {
+    text: { 
       marginLeft: "10px",
     },
-    box: {
+    box: { 
       marginLeft: "20px",
       display: "flex",
     },
   }),
 )
 
-export default function Navigation() {
+export default function Navigation() { 
   const classes = useStyles()
   return (
       <AppBar color="default" position="sticky">
         <Toolbar>
-          <Box flexGrow={9}>
+          <Box flexGrow={ 9 }>
             <Link href="/">
               <Button>
                 <HomeIcon />
-                <Typography variant="h6" className={classes.text}>
+                <Typography variant="h6" className={ classes.text }>
                   Critterpedia
                 </Typography>
               </Button>
             </Link>
           </Box>
-          <Box className={classes.box}>
+          <Box className={ classes.box }>
             <Link href="/bugs" color="inherit">
               <Button color="inherit">
-                <Avatar className={classes.red}>
-                  <img src={bugIcon} width="24px" height="24px" alt="bugs" />
+                <Avatar className={ classes.red }>
+                  <img src={ bugIcon } width="24px" height="24px" alt="bugs"/>
                 </Avatar>
-                <Typography variant="body2" className={classes.text}>
+                <Typography variant="body2" className={ classes.text }>
                   BUGS
               </Typography>
               </Button>
             </Link>
           </Box>
-          <Box className={classes.box}>
+          <Box className={ classes.box }>
             <Link href="/fish" color="inherit">
               <Button color="inherit">
-                <Avatar className={classes.blue}>
-                  <img src={fishIcon} width="32px" height="32px" alt="fish" />
+                <Avatar className={ classes.blue }>
+                  <img src={ fishIcon } width="32px" height="32px" alt="fish"/>
                 </Avatar>
-                <Typography variant="body2" className={classes.text}>
+                <Typography variant="body2" className={ classes.text }>
                   Fish
               </Typography>
               </Button>
             </Link>
           </Box>
-          <Box className={classes.box}>
+          <Box className={ classes.box }>
             <Link href="/login" color="inherit">
               <Button color="inherit">Login</Button>
             </Link>
