@@ -1,5 +1,5 @@
 import React from 'react';
-import Circle from '../components/Circle';
+import Circle from './Circle';
 
 interface SeasonsContainerProps {
   seasons: string;

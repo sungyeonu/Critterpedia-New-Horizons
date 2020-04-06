@@ -1,7 +1,7 @@
 import React from 'react';
 import Circle from './Circle';
 
-interface SeasonsProps {
+interface SeasonsProps { // name it to Months or something
   jan: string, 
   feb: string, 
   mar: string, 
@@ -31,7 +31,7 @@ const wi = colorCodes.winter;
 const sp = colorCodes.spring;
 const su = colorCodes.summer;
 const fa = colorCodes.fall;
-const w = "#ffffff";
+const w = "#ffffff"; // rename it to white
 
 
 export default function Seasons() {
