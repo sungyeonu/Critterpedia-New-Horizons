@@ -13,27 +13,27 @@ import HomeIcon from '@material-ui/icons/Home';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    toolbar: theme.mixins.toolbar,
     red: {
-      backgroundColor: '#FF7C7C',
+      backgroundColor: "#FF7C7C",
     },
     blue: {
-      backgroundColor: '#88E1F2',
+      backgroundColor: "#88E1F2",
     },
     text: {
-      marginLeft: '10px',
+      marginLeft: "10px",
     },
     box: {
-      marginLeft: '20px',
-      display: 'flex',
+      marginLeft: "20px",
+      display: "flex",
     },
   }),
-);
+)
 
 export default function Navigation() {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
-    <div>
-      <AppBar color="default">
+      <AppBar color="default" position="sticky">
         <Toolbar>
           <Box flexGrow={9}>
             <Link href="/">
@@ -75,10 +75,6 @@ export default function Navigation() {
             </Link>
           </Box>
         </Toolbar>
-
       </AppBar>
-    </div>
-
   )
-
 }

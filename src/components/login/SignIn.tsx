@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Navigation from '../Navigation'
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -19,20 +17,20 @@ interface SignInProps {
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    boxShadow: '1px 2px 4px rgba(0, 0, 0, .5)',
-    padding: '20px',
-    backgroundColor: 'white',
+    boxShadow: "1px 2px 4px rgba(0, 0, 0, .5)",
+    padding: "20px",
+    backgroundColor: "white",
     marginTop: theme.spacing(12),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.primary.main,
   },
   form: {
-    width: '80%', // Fix IE 11 issue.
+    width: "80%", // Fix IE 11 issue.
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -41,19 +39,15 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function SignIn({ setUsername, setPassword, setShowSignIn, submit }: SignInProps) {
-  const classes = useStyles();
-
+  const classes = useStyles()
   return (
-    <>
-      <Navigation />
-      <Container component="main" maxWidth="xs">
-        <div className={classes.paper} >
+      <Container component="main" maxWidth="xs" className={classes.paper}>
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography variant="h5">
             Sign in
-            </Typography>
+          </Typography>
           <form className={classes.form} noValidate onSubmit={e => submit()}>
             <TextField
               variant="outlined"
@@ -86,8 +80,6 @@ export default function SignIn({ setUsername, setPassword, setShowSignIn, submit
               {"Don't have an account? Sign Up"}
             </Link>
           </form>
-        </div>
       </Container>
-    </>
-  );
+  )
 }

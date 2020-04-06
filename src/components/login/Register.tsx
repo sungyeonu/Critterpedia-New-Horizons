@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Navigation from '../Navigation'
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -10,10 +9,10 @@ import Container from '@material-ui/core/Container';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 interface RegisterProps {
-  setUsername: (s: string) => void;
-  setPassword: (s: string) => void;
-  setShowSignIn: (b: boolean) => void;
-  submit: () => void;
+  setUsername: (s: string) => void
+  setPassword: (s: string) => void
+  setShowSignIn: (b: boolean) => void
+  submit: () => void
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -43,14 +42,11 @@ export default function Register({ setUsername, setPassword, setShowSignIn, subm
   const classes = useStyles();
 
   return (
-    <>
-      <Navigation />
-      <Container component="main" maxWidth="xs">
-        <div className={classes.paper} >
+      <Container component="main" maxWidth="xs" className={classes.paper}>
           <Avatar className={classes.avatar}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography variant="h5">
             Register
           </Typography>
           <form className={classes.form} noValidate onSubmit={e => submit()}>
@@ -87,8 +83,6 @@ export default function Register({ setUsername, setPassword, setShowSignIn, subm
               {"Already have an account? Log in"}
             </Link>
           </form>
-        </div>
       </Container>
-    </>
   );
 }
