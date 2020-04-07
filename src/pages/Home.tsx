@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     boxShadow: '1px 2px 4px rgba(0, 0, 0, .5)',
     padding: '20px',
+    width: "95%",
     backgroundColor: 'white',
     marginTop: theme.spacing(4),
     display: 'flex',
