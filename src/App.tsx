@@ -10,7 +10,7 @@ export default function App() {
   const [token, setToken] = useState("")
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navigation/>
           <Route exact path="/" component={ Home }></Route>
           <Route path="/login" component={ Login }></Route>
