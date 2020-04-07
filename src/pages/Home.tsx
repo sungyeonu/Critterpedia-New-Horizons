@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'left',
   },
 }))
+
 export default function Home() {
   const classes = useStyles();
 
@@ -30,6 +31,7 @@ export default function Home() {
       <Typography variant="body1">
         They can still be used in the Southern Hemisphere, add 6 to the months eg. March + 6 = September
       </Typography>
+      <br />
       <Typography align="center">
         <img src={Isabelle} width="200" alt="Isabelle" />
       </Typography>

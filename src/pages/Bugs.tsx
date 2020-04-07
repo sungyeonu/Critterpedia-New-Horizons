@@ -10,11 +10,18 @@ import Paper from '@material-ui/core/Paper';
 import bugsJson from '../data/bugs.json';
 import SeasonsContainer from '../components/season/SeasonsContainer';
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    boxShadow: '1px 2px 4px rgba(0, 0, 0, .5)',
+    width: "95%",
+    margin: "auto",
+    marginTop: theme.spacing(4),
+  },
   table: {
     minWidth: 650,
   },
-});
+}))
 
 interface Bug {
   name: string,
@@ -46,7 +53,7 @@ export default function SimpleTable() {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className={classes.paper}>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>

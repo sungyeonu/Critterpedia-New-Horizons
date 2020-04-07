@@ -11,8 +11,8 @@ const seasonsStyle = {
 
 const colorCodes = {
   winter: "#01BFFF",
-  spring: "#A7FC01",
-  summer: "#FFFE00",
+  spring: "#ffb7c5",
+  summer: "#A7FC01",
   fall: "#FF7F00",
   white: "#FFFFFF"
 };
