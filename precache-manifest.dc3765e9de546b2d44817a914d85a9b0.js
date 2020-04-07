@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c44067371e63ffbc5d30471377fa995a",
+    "revision": "c53d148bf4c204de0bda00dbd2dd412e",
     "url": "/Critterpedia-New-Horizons/index.html"
   },
   {
-    "revision": "fc5bc58b904d1b4119db",
-    "url": "/Critterpedia-New-Horizons/static/js/2.82453446.chunk.js"
+    "revision": "434bd042fb838747e57c",
+    "url": "/Critterpedia-New-Horizons/static/js/2.1b469c4d.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Critterpedia-New-Horizons/static/js/2.82453446.chunk.js.LICENSE.txt"
+    "url": "/Critterpedia-New-Horizons/static/js/2.1b469c4d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75669c628777ea3897a9",
-    "url": "/Critterpedia-New-Horizons/static/js/main.9a9d98d5.chunk.js"
+    "revision": "1e52c6e136e67a9abf47",
+    "url": "/Critterpedia-New-Horizons/static/js/main.70c87b07.chunk.js"
   },
   {
     "revision": "a8daab714d395d9575f0",
