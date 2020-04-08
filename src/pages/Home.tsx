@@ -34,7 +34,7 @@ export default function Home() {
       </Typography>
       <br />
       <Typography align="center">
-        <img src={Isabelle} width="200" alt="Isabelle" />
+        <img src={Isabelle} width="140" alt="Isabelle" />
       </Typography>
       <br />
       <br />
@@ -46,6 +46,9 @@ export default function Home() {
       <Typography variant="body1">
         I plan to expand this tool with user authentication soon. The login page is only experimental at the moment.
         If you like the site and find it useful, feel free to reach me out on my Github page or buy me a cup of coffee!
+      </Typography>
+      <Typography align="center">
+        <a href="https://www.buymeacoffee.com/yCJDLGfl5"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" width="200px" /></a>
       </Typography>
     </Container>
   )
