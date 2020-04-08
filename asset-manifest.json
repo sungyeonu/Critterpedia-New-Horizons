@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/Critterpedia-New-Horizons/static/js/main.2e3f822f.chunk.js",
-    "main.js.map": "/Critterpedia-New-Horizons/static/js/main.2e3f822f.chunk.js.map",
+    "main.js": "/Critterpedia-New-Horizons/static/js/main.c84511a5.chunk.js",
+    "main.js.map": "/Critterpedia-New-Horizons/static/js/main.c84511a5.chunk.js.map",
     "runtime-main.js": "/Critterpedia-New-Horizons/static/js/runtime-main.4f121e4b.js",
     "runtime-main.js.map": "/Critterpedia-New-Horizons/static/js/runtime-main.4f121e4b.js.map",
-    "static/js/2.1b469c4d.chunk.js": "/Critterpedia-New-Horizons/static/js/2.1b469c4d.chunk.js",
-    "static/js/2.1b469c4d.chunk.js.map": "/Critterpedia-New-Horizons/static/js/2.1b469c4d.chunk.js.map",
+    "static/js/2.1a66e807.chunk.js": "/Critterpedia-New-Horizons/static/js/2.1a66e807.chunk.js",
+    "static/js/2.1a66e807.chunk.js.map": "/Critterpedia-New-Horizons/static/js/2.1a66e807.chunk.js.map",
     "index.html": "/Critterpedia-New-Horizons/index.html",
-    "precache-manifest.695732987b0be42a1014c47ebde9bd73.js": "/Critterpedia-New-Horizons/precache-manifest.695732987b0be42a1014c47ebde9bd73.js",
+    "precache-manifest.f6ef88eb0ccca1fcbfbd4ae70242794c.js": "/Critterpedia-New-Horizons/precache-manifest.f6ef88eb0ccca1fcbfbd4ae70242794c.js",
     "service-worker.js": "/Critterpedia-New-Horizons/service-worker.js",
-    "static/js/2.1b469c4d.chunk.js.LICENSE.txt": "/Critterpedia-New-Horizons/static/js/2.1b469c4d.chunk.js.LICENSE.txt",
+    "static/js/2.1a66e807.chunk.js.LICENSE.txt": "/Critterpedia-New-Horizons/static/js/2.1a66e807.chunk.js.LICENSE.txt",
     "static/media/Isabelle.png": "/Critterpedia-New-Horizons/static/media/Isabelle.fe91b541.png",
     "static/media/bugIcon.png": "/Critterpedia-New-Horizons/static/media/bugIcon.806efd53.png",
     "static/media/fishIcon.png": "/Critterpedia-New-Horizons/static/media/fishIcon.89bb41e2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4f121e4b.js",
-    "static/js/2.1b469c4d.chunk.js",
-    "static/js/main.2e3f822f.chunk.js"
+    "static/js/2.1a66e807.chunk.js",
+    "static/js/main.c84511a5.chunk.js"
   ]
 }
