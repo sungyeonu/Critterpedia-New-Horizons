@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Critterpedia-New-Horizons/static/js/main.42b14df6.chunk.js",
-    "main.js.map": "/Critterpedia-New-Horizons/static/js/main.42b14df6.chunk.js.map",
+    "main.js": "/Critterpedia-New-Horizons/static/js/main.ad351158.chunk.js",
+    "main.js.map": "/Critterpedia-New-Horizons/static/js/main.ad351158.chunk.js.map",
     "runtime-main.js": "/Critterpedia-New-Horizons/static/js/runtime-main.4f121e4b.js",
     "runtime-main.js.map": "/Critterpedia-New-Horizons/static/js/runtime-main.4f121e4b.js.map",
     "static/js/2.1a66e807.chunk.js": "/Critterpedia-New-Horizons/static/js/2.1a66e807.chunk.js",
     "static/js/2.1a66e807.chunk.js.map": "/Critterpedia-New-Horizons/static/js/2.1a66e807.chunk.js.map",
     "index.html": "/Critterpedia-New-Horizons/index.html",
-    "precache-manifest.7eaa34238d8169693ce9b3cc274c493b.js": "/Critterpedia-New-Horizons/precache-manifest.7eaa34238d8169693ce9b3cc274c493b.js",
+    "precache-manifest.4df7b6d2ece82ad6b4f5ef193188287e.js": "/Critterpedia-New-Horizons/precache-manifest.4df7b6d2ece82ad6b4f5ef193188287e.js",
     "service-worker.js": "/Critterpedia-New-Horizons/service-worker.js",
     "static/js/2.1a66e807.chunk.js.LICENSE.txt": "/Critterpedia-New-Horizons/static/js/2.1a66e807.chunk.js.LICENSE.txt",
     "static/media/Isabelle.png": "/Critterpedia-New-Horizons/static/media/Isabelle.fe91b541.png",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.4f121e4b.js",
     "static/js/2.1a66e807.chunk.js",
-    "static/js/main.42b14df6.chunk.js"
+    "static/js/main.ad351158.chunk.js"
   ]
 }

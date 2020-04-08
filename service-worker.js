@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Critterpedia-New-Horizons/precache-manifest.7eaa34238d8169693ce9b3cc274c493b.js"
+  "/Critterpedia-New-Horizons/precache-manifest.4df7b6d2ece82ad6b4f5ef193188287e.js"
 );
 
 self.addEventListener('message', (event) => {
