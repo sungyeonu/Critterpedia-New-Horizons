@@ -42,6 +42,7 @@ interface Fish {
   shadowSize: string,
   time: string,
   seasonsContainer: JSX.Element,
+  [key: string]: any 
 }
 
 function createFish(name: string, imageLink: string, price: string, location: string, shadowSize: string, time: string, seasons: string) {
@@ -97,11 +98,13 @@ interface SortableRows {
 }
 
 const sortableRows: SortableRows[] = [
+  // { id: 'imageLink', numeric: false, label: 'Image' },
   { id: 'name', numeric: false, label: 'Name' },
   { id: 'price', numeric: true, label: 'Price' },
   { id: 'location', numeric: false, label: 'Location' },
   { id: 'shadowSize', numeric: false, label: 'Shadow Size' },
   { id: 'time', numeric: false, label: 'Time' },
+  // { id: 'seasonsContainer', numeric: false, label: 'Seasons' },
 ];
 
 interface EnhancedTableProps {
@@ -148,6 +151,8 @@ function EnhancedTableHead(props: EnhancedTableProps) {
   );
 }
 
+type temp = "string" | "number"
+
 export default function SimpleTable() {
   const classes = useStyles();
   const [order, setOrder] = React.useState<Order>('asc');
@@ -164,7 +169,9 @@ export default function SimpleTable() {
       <Table className={classes.table}>
         <EnhancedTableHead order={order} orderBy={orderBy} onRequestSort={handleRequestSort}/>
         <TableBody>
+ 
         {stableSort(rows, getComparator(order, orderBy)).map(row => (
+          // {rows.map(row => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
                 <img src={row.imageLink} alt={row.name} width="64" height="64" />

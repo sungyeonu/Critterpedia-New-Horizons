@@ -39,7 +39,7 @@ export default function Home() {
       <br />
       <br />
       <Typography variant="body1" >
-        I'm Sungyeon, a student based in Philadelphia. I am a big fan of Animal Crossing Series.
+        I'm Sungyeon, a student based in Philadelphia. I am a big fan of the Animal Crossing series.
         I found it difficult to find a reliable database for fish and bugs in Animal Crossing - New Horizons, so I built this site to provide a quick reference for the critters I am trying to catch.
       </Typography>
       <br />

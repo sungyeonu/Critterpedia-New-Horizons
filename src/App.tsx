@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Navigation from './components/Navigation'
-import Fish from './pages/Fish'
-import Bugs from './pages/Bugs'
-import Login from './pages/Login'
-import Home from './pages/Home'
+import Navigation from './components/Navigation';
+import Fish from './pages/Fish';
+import Bugs from './pages/Bugs';
+import Login from './pages/Login';
+import Home from './pages/Home';
+// import Test from './pages/Test';
 
 function renderPage(param: string) {
   switch (param) {
